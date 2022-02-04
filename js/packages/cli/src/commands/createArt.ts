@@ -6,15 +6,20 @@ import imageminPngquant from 'imagemin-pngquant';
 import log from 'loglevel';
 
 import { readJsonFile } from '../helpers/various';
-import { ASSETS_DIRECTORY, TRAITS_DIRECTORY } from '../helpers/metadata';
+import { ASSETS_DIRECTORY } from '../helpers/metadata';
 
-function makeCreateImageWithCanvas(order, width, height) {
+function makeCreateImageWithCanvas(
+  order,
+  width,
+  height,
+  traitsLocation: string,
+) {
   return function makeCreateImage(canvas, context) {
     return async function createImage(image) {
       const start = Date.now();
       const ID = parseInt(image.id, 10) - 1;
       for (const cur of order) {
-        const imageLocation = `${TRAITS_DIRECTORY}/${cur}/${image[cur]}`;
+        const imageLocation = `${traitsLocation}/${cur}/${image[cur]}`;
         const loadedImage = await loadImage(imageLocation);
         context.patternQuality = 'best';
         context.quality = 'best';
@@ -50,10 +55,16 @@ const worker = (work, next_) => async () => {
 export async function createGenerativeArt(
   configLocation: string,
   randomizedSets,
+  traitsLocation: string,
 ) {
   const start = Date.now();
   const { order, width, height } = await readJsonFile(configLocation);
-  const makeCreateImage = makeCreateImageWithCanvas(order, width, height);
+  const makeCreateImage = makeCreateImageWithCanvas(
+    order,
+    width,
+    height,
+    traitsLocation,
+  );
 
   const imagesNb = randomizedSets.length;
 

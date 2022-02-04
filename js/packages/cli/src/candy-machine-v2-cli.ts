@@ -944,12 +944,18 @@ program
     '-ta, --treat-attributes-as-file-names <string>',
     'If your attributes are filenames, trim the .png off if set to true',
   )
+  .option(
+    '-t, --traits-location <string>',
+    'Traits folder location',
+    './traits',
+  )
   .action(async (directory, cmd) => {
     const {
       numberOfImages,
       configLocation,
       outputLocation,
       treatAttributesAsFileNames,
+      traitsLocation,
     } = cmd.opts();
 
     log.info('Loaded configuration file');
@@ -965,7 +971,7 @@ program
 
     // 2. piecemeal generate the images
     if (!outputLocation) {
-      await createGenerativeArt(configLocation, randomSets);
+      await createGenerativeArt(configLocation, randomSets, traitsLocation);
       log.info('Images have been created successfully!');
     } else {
       fs.writeFileSync(outputLocation, JSON.stringify(randomSets));

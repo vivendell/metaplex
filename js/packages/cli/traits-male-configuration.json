@@ -1,0 +1,102 @@
+{
+  "name": "",
+  "symbol": "",
+  "description": "",
+  "creators": [],
+  "dnp": {},
+  "premadeCustoms": [],
+  "collection": {},
+  "breakdown": {
+    "3Roupas": {
+      "Black Suit.png": 10,
+      "Blue Casual Shirt.png": 10,
+      "Blue Robe.png": 10,
+      "Blue and Golden Armor.png": 10,
+      "Brown Jacket.png": 10,
+      "Chain Shirt.png": 10,
+      "Cold Jacket.png": 10,
+      "Green Armor.png": 10,
+      "Magic Robe.png": 10,
+      "Mystic Armor.png": 2,
+      "Pijama.png": 4,
+      "Red Jacket.png": 2,
+      "Solana Armor.png": 2
+    },
+    "4Chapeus": {
+      "Black Cap.png": 10,
+      "Cap.png": 10,
+      "Christmas Cap.png": 10,
+      "Frozen Crown.png": 10,
+      "Golden Crown.png": 10,
+      "Golden Tiara.png": 10,
+      "Halo.png": 10,
+      "Mystic Horns.png": 10,
+      "None.png": 10,
+      "Peaky Blinders Cap.png": 6,
+      "Solana Bandana.png": 2,
+      "Solana Cap.png": 2
+    },
+    "6Brincos": {
+      "Feather Earring.png": 20,
+      "Frozen Earring.png": 20,
+      "Golden Earring.png": 20,
+      "Light Spot.png": 20,
+      "Solana Earring.png": 20
+    },
+    "11Bg": {
+      "4.png": 25,
+      "Black Background.png": 25,
+      "Dark Pink Background.png": 25,
+      "Grey Backgound.png": 25
+    },
+    "5Lazer": {
+      "Blue Lazer.png": 3,
+      "None.png": 91,
+      "Red Lazer.png": 3,
+      "Yellow Lazer.png": 3
+    },
+    "9Orelhas": { "1.png": 33, "2.png": 33, "3.png": 34 },
+    "8Oculos": {
+      "Futuristic Glasses.png": 5,
+      "Grey Glasses.png": 5,
+      "Kratos Mark.png": 5,
+      "Mystic Eyes.png": 5,
+      "None.png": 55,
+      "Reading Glasses.png": 5,
+      "SOL Eyes.png": 5,
+      "Solana Glasses.png": 5,
+      "Swimming Goggles.png": 5,
+      "Tracker Glasses.png": 5
+    },
+    "10Base": { "Angry Male.png": 33, "Female.png": 33, "Male.png": 34 },
+    "7Cabelo": {
+      "11.png": 10,
+      "12.png": 10,
+      "13.png": 10,
+      "6.png": 10,
+      "9.png": 10,
+      "Dark Black Hair.png": 10,
+      "Long Blond Hair.png": 10,
+      "Long Blue Hair.png": 10,
+      "Long Red Hair.png": 10,
+      "Ragnar Style Hair.png": 2,
+      "Solana Brown Hair.png": 2,
+      "Solana White Hair.png": 2,
+      "Spiked Blond Hair.png": 2,
+      "Style Hair.png": 2
+    }
+  },
+  "order": [
+    "11Bg",
+    "10Base",
+    "9Orelhas",
+    "8Oculos",
+    "7Cabelo",
+    "6Brincos",
+    "5Lazer",
+    "4Chapeus",
+    "3Roupas"
+  ],
+  "width": 1000,
+  "height": 1000
+}

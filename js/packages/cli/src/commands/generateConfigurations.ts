@@ -27,7 +27,7 @@ export async function generateConfigurations(
     await Promise.all(
       traits.map(async trait => {
         const attributes = await readdir(`./traits/${trait}`);
-        const randoms = generateRandoms(attributes.length - 1);
+        const randoms = generateRandoms(attributes.length);
         const tmp = {};
 
         attributes.forEach((attr, i) => {

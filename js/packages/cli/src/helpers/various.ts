@@ -417,14 +417,14 @@ export function generateRandoms(
 
   for (let i = 0; i < numberOfAttrs; i++) {
     const random = Math.floor(Math.random() * loose_percentage) + 1;
-    numbers.push(random);
+    numbers.push(loose_percentage);
   }
 
-  const sum = numbers.reduce((prev, cur) => {
-    return prev + cur;
-  }, 0);
+  // const sum = numbers.reduce((prev, cur) => {
+  //   return prev + cur;
+  // }, 0);
 
-  numbers.push(total - sum);
+  // numbers.push(total - sum);
   return numbers;
 }
 

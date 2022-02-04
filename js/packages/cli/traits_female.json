@@ -1,0 +1,120 @@
+{
+  "name": "",
+  "symbol": "",
+  "description": "",
+  "creators": [],
+  "dnp": {},
+  "premadeCustoms": [],
+  "collection": {},
+  "breakdown": {
+    "Boca": {
+      "Blue Bubble Gum.png": 7.5,
+      "Cigar.png": 7.5,
+      "Djarum Black.png": 7.5,
+      "Malboro.png": 7.5,
+      "Pink Bubble Gum.png": 7.5,
+      "Toothpick.png": 7.5,
+      "None.png": 55
+    },
+    "Background": { "1.png": 25, "2.png": 25, "3.png": 25, "4.png": 25 },
+    "Earrings": {
+      "Feather Earring.png": 20,
+      "Frozen Earring.png": 20,
+      "Golden Earring.png": 20,
+      "Light Spot.png": 20,
+      "Solana Earring.png": 20
+    },
+    "Clothes": {
+      "Black Suit.png": 7.6923076923076925,
+      "Blue Casual Shirt.png": 7.6923076923076925,
+      "Blue Robe.png": 7.6923076923076925,
+      "Blue and Golden Armor.png": 7.6923076923076925,
+      "Brown Jacket.png": 7.6923076923076925,
+      "Chain Shirt.png": 7.6923076923076925,
+      "Cold Jacket.png": 7.6923076923076925,
+      "Green Armor.png": 7.6923076923076925,
+      "Magic Robe.png": 7.6923076923076925,
+      "Mystic Armor.png": 7.6923076923076925,
+      "Pijama.png": 7.6923076923076925,
+      "Red Jacket.png": 7.6923076923076925,
+      "Solana Armor.png": 7.6923076923076925
+    },
+    "Ears": {
+      "1.png": 33.333333333333336,
+      "2.png": 33.333333333333336,
+      "3.png": 33.333333333333336
+    },
+    "Glasses": {
+      "Futuristic Glasses.png": 5,
+      "Grey Glasses.png": 5,
+      "Kratos Mark.png": 5,
+      "Mystic Eyes.png": 5,
+      "None.png": 55,
+      "Reading Glasses.png": 5,
+      "SOL Eyes.png": 5,
+      "Solana Glasses.png": 5,
+      "Swimming Goggles.png": 5,
+      "Tracker Glasses.png": 5
+    },
+    "Hair": {
+      "11.png": 6.25,
+      "12.png": 6.25,
+      "13.png": 6.25,
+      "6.png": 6.25,
+      "9.png": 6.25,
+      "Dark Black Hair.png": 6.25,
+      "Long Blond Hair.png": 6.25,
+      "Long Blue Hair.png": 6.25,
+      "Long Red Hair.png": 6.25,
+      "Ragnar Style Hair.png": 6.25,
+      "Solana Brown Hair.png": 6.25,
+      "Solana White Hair.png": 6.25,
+      "Spiked Blond Hair.png": 6.25,
+      "Style Hair.png": 6.25,
+      "new1.png": 6.25,
+      "new2.png": 6.25
+    },
+    "Hat": {
+      "Black Cap.png": 7.6923076923076925,
+      "BlueCap.png": 7.6923076923076925,
+      "Frozen Crown.png": 7.6923076923076925,
+      "Golden Crown.png": 7.6923076923076925,
+      "Golden Tiara.png": 7.6923076923076925,
+      "Halo.png": 7.6923076923076925,
+      "Mystic Horns.png": 7.6923076923076925,
+      "None.png": 7.6923076923076925,
+      "Peaky Blinders Cap.png": 7.6923076923076925,
+      "RedCap.png": 7.6923076923076925,
+      "Solana Bandana.png": 7.6923076923076925,
+      "Solana Cap.png": 7.6923076923076925,
+      "TiaraWithDiamond.png": 7.6923076923076925
+    },
+    "Laser": {
+      "Blue Lazer.png": 4,
+      "None.png": 88,
+      "Red Lazer.png": 4,
+      "Yellow Lazer.png": 4
+    },
+    "Wings": {
+      "BlackWings.png": 5,
+      "WhiteWings.png": 5,
+      "None.png": 90
+    },
+    "Base": { "3.png": 25, "4.png": 25, "Female.png": 25, "new1.png": 25 }
+  },
+  "order": [
+    "Background",
+    "Wings",
+    "Base",
+    "Clothes",
+    "Earrings",
+    "Ears",
+    "Glasses",
+    "Hair",
+    "Hat",
+    "Boca",
+    "Laser"
+  ],
+  "width": 1000,
+  "height": 1000
+}

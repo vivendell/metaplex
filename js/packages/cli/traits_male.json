@@ -13,7 +13,7 @@
   "collection": { "name": "Vivendell", "family": "Elves" },
   "breakdown": {
     "Background": {
-      "4.png": 25,
+      "Brown.png": 25,
       "Black Background.png": 25,
       "Dark Pink Background.png": 25,
       "Grey Backgound.png": 25
@@ -55,9 +55,9 @@
       "Solana Earring.png": 20
     },
     "Ears": {
-      "1.png": 33.333333333333336,
-      "2.png": 33.333333333333336,
-      "3.png": 33.333333333333336
+      "Type1.png": 33.333333333333336,
+      "Type2.png": 33.333333333333336,
+      "Type3.png": 33.333333333333336
     },
     "Glasses": {
       "Futuristic Glasses.png": 5,
@@ -72,11 +72,11 @@
       "Tracker Glasses.png": 5
     },
     "Hair": {
-      "11.png": 6.25,
-      "12.png": 6.25,
-      "13.png": 6.25,
-      "6.png": 6.25,
-      "9.png": 6.25,
+      "Type11.png": 6.25,
+      "Type12.png": 6.25,
+      "Type13.png": 6.25,
+      "Type6.png": 6.25,
+      "Type9.png": 6.25,
       "Dark Black Hair.png": 6.25,
       "Long Blond Hair.png": 6.25,
       "Long Blue Hair.png": 6.25,

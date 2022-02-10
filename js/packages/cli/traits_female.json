@@ -1,13 +1,18 @@
 {
-  "name": "",
-  "symbol": "",
-  "description": "",
-  "creators": [],
+  "name": "Elf ",
+  "symbol": "ELF",
+  "description": "Elves of Vivendell",
+  "creators": [
+    {
+      "address": "2VFC2JSWqgvdrUft1VN2unRSA5PcRfb5QDWbNQazGJKg",
+      "share": 100
+    }
+  ],
   "dnp": {},
   "premadeCustoms": [],
-  "collection": {},
+  "collection": { "name": "Vivendell", "family": "Elves" },
   "breakdown": {
-    "Boca": {
+    "Mouth": {
       "Blue Bubble Gum.png": 7.5,
       "Cigar.png": 7.5,
       "Djarum Black.png": 7.5,
@@ -107,12 +112,12 @@
     "Wings",
     "Base",
     "Clothes",
-    "Earrings",
     "Ears",
     "Glasses",
     "Hair",
+    "Earrings",
     "Hat",
-    "Boca",
+    "Mouth",
     "Laser"
   ],
   "width": 1000,

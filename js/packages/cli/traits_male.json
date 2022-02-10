@@ -1,11 +1,16 @@
 {
-  "name": "",
-  "symbol": "",
-  "description": "",
-  "creators": [],
+  "name": "Elf ",
+  "symbol": "ELF",
+  "description": "Elves of Vivendell",
+  "creators": [
+    {
+      "address": "2VFC2JSWqgvdrUft1VN2unRSA5PcRfb5QDWbNQazGJKg",
+      "share": 100
+    }
+  ],
   "dnp": {},
   "premadeCustoms": [],
-  "collection": {},
+  "collection": { "name": "Vivendell", "family": "Elves" },
   "breakdown": {
     "Background": {
       "4.png": 25,
@@ -28,7 +33,7 @@
       "Red Jacket.png": 7.6923076923076925,
       "Solana Armor.png": 7.6923076923076925
     },
-    "Boca": {
+    "Mouth": {
       "Blue Bubble Gum.png": 7.5,
       "Cigar.png": 7.5,
       "Djarum Black.png": 7.5,
@@ -108,7 +113,8 @@
     "Wings": {
       "BlackWings.png": 5,
       "WhiteWings.png": 5,
-      "None.png": 90
+      "DarkWingss.png": 15,
+      "None.png": 75
     }
   },
   "order": [
@@ -116,12 +122,12 @@
     "Wings",
     "Base",
     "Clothes",
-    "Earrings",
     "Ears",
     "Glasses",
     "Hair",
+    "Earrings",
     "Hat",
-    "Boca",
+    "Mouth",
     "Laser"
   ],
   "width": 1000,

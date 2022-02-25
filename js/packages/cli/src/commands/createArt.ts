@@ -6,13 +6,13 @@ import imageminPngquant from 'imagemin-pngquant';
 import log from 'loglevel';
 
 import { readJsonFile } from '../helpers/various';
-import { ASSETS_DIRECTORY } from '../helpers/metadata';
 
 function makeCreateImageWithCanvas(
   order,
   width,
   height,
   traitsLocation: string,
+  outputFolder: string,
 ) {
   return function makeCreateImage(canvas, context) {
     return async function createImage(image) {
@@ -34,9 +34,9 @@ function makeCreateImageWithCanvas(
           }),
         ],
       });
-      await writeFile(`${ASSETS_DIRECTORY}/${ID}.png`, optimizedImage);
+      await writeFile(`${outputFolder}/${ID}.png`, optimizedImage);
       const end = Date.now();
-      log.info(`Placed ${ID}.png into ${ASSETS_DIRECTORY}.`);
+      log.info(`Placed ${ID}.png into ${outputFolder}.`);
       const duration = end - start;
       log.info('Image generated in:', `${duration}ms.`);
     };
@@ -56,6 +56,7 @@ export async function createGenerativeArt(
   configLocation: string,
   randomizedSets,
   traitsLocation: string,
+  outputFolder: string,
 ) {
   const start = Date.now();
   const { order, width, height } = await readJsonFile(configLocation);
@@ -64,6 +65,7 @@ export async function createGenerativeArt(
     width,
     height,
     traitsLocation,
+    outputFolder,
   );
 
   const imagesNb = randomizedSets.length;

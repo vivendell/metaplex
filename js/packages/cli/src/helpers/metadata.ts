@@ -10,16 +10,16 @@ import {
 
 const { writeFile, mkdir } = fs.promises;
 
-export const ASSETS_DIRECTORY = './assets';
-export const TRAITS_DIRECTORY = './traits';
-
 export async function createMetadataFiles(
   numberOfImages: string,
   configLocation: string,
   treatAttributesAsFileNames: boolean,
+  outputFolder: string,
 ): Promise<any[]> {
   let numberOfFilesCreated: number = 0;
   const randomizedSets = [];
+
+  const ASSETS_DIRECTORY = outputFolder;
 
   if (!fs.existsSync(ASSETS_DIRECTORY)) {
     try {

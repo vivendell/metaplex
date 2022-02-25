@@ -388,7 +388,10 @@ programCommand('verify_upload')
           const name = fromUTF8Array([...thisSlice.slice(2, 34)]);
           const uri = fromUTF8Array([...thisSlice.slice(40, 240)]);
           const cacheItem = cacheContent.items[key];
-          if (!name.match(escapeRegExp(cacheItem.name)) || !uri.match(escapeRegExp(cacheItem.link))) {
+          if (
+            !name.match(escapeRegExp(cacheItem.name)) ||
+            !uri.match(escapeRegExp(cacheItem.link))
+          ) {
             //leaving here for debugging reasons, but it's pretty useless. if the first upload fails - all others are wrong
             /*log.info(
                 `Name (${name}) or uri (${uri}) didnt match cache values of (${cacheItem.name})` +
@@ -950,6 +953,11 @@ program
     'Traits folder location',
     './traits',
   )
+  .option(
+    '-of, --output-folder <string>',
+    'Output folder locatiod as das das dn',
+    './assets',
+  )
   .action(async (directory, cmd) => {
     const {
       numberOfImages,
@@ -957,22 +965,30 @@ program
       outputLocation,
       treatAttributesAsFileNames,
       traitsLocation,
+      outputFolder,
     } = cmd.opts();
 
     log.info('Loaded configuration file');
+    console.log(outputFolder);
 
     // 1. generate the metadata json files
     const randomSets = await createMetadataFiles(
       numberOfImages,
       configLocation,
       treatAttributesAsFileNames == 'true',
+      outputFolder,
     );
 
     log.info('JSON files have been created within the assets directory');
 
     // 2. piecemeal generate the images
     if (!outputLocation) {
-      await createGenerativeArt(configLocation, randomSets, traitsLocation);
+      await createGenerativeArt(
+        configLocation,
+        randomSets,
+        traitsLocation,
+        outputFolder,
+      );
       log.info('Images have been created successfully!');
     } else {
       fs.writeFileSync(outputLocation, JSON.stringify(randomSets));

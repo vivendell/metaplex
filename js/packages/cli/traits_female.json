@@ -13,14 +13,16 @@
   "collection": { "name": "Vivendell", "family": "Elves" },
   "breakdown": {
     "Background": {
-      "Black Chocolate.png": 14.5,
-      "Dark Jungle Green.png": 14.5,
-      "Dark Purple.png": 14.5,
-      "Dark Sienna.png": 6.5,
-      "Light Brown.png": 14.5,
-      "Rich Black.png": 14.5,
-      "Rich Black Sky.png": 6.5,
-      "Xiketic.png": 14.5
+      "Dark Sienna.png": 6,
+      "Rich Black Sky.png": 6,
+      "Dark Jungle Green.png": 11,
+      "Dark Purple.png": 11,
+      "Light Brown.png": 11,
+      "Rich Black.png": 11,
+      "Xiketic.png": 11,
+      "Metallic.png": 11,
+      "Nickel.png": 11,
+      "Lavender.png": 11
     },
     "Clothes": {
       "Black Suit.png": 2,

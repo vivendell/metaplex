@@ -8,7 +8,40 @@
       "share": 100
     }
   ],
-  "dnp": {},
+  "dnp": {
+    "Eyes": {
+      "Futuristic Glasses.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Sunglasses.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Scar.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Mystic Eyes.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "None.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Reading Glasses.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Solana Eyes.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Solana Glasses.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Swimming Goggles.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      },
+      "Tracker Glasses.png": {
+        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
+      }
+    }
+  },
   "premadeCustoms": [],
   "collection": { "name": "Vivendell", "family": "Elves" },
   "breakdown": {
@@ -28,14 +61,14 @@
       "Black Suit.png": 2,
       "Blue Casual Shirt.png": 9.8,
       "Blue Robe.png": 6.8,
-      "Blue and Golden Armor.png": 1,
+      "Golden Armor.png": 1,
       "Brown Jacket.png": 14.8,
       "Chain Shirt.png": 10.8,
-      "Cold Jacket.png": 11.8,
+      "Winter Jacket.png": 11.8,
       "Green Armor.png": 8.8,
       "Magic Robe.png": 8.8,
       "Mystic Armor.png": 8.8,
-      "Pijama.png": 8.8,
+      "Pyjama.png": 8.8,
       "Red Jacket.png": 6.8,
       "Solana Armor.png": 1
     },
@@ -57,7 +90,7 @@
       "Feather Earring.png": 5,
       "Frozen Earring.png": 4,
       "Golden Earring.png": 3,
-      "Light Spot.png": 7,
+      "Light Spot Earring.png": 7,
       "Solana Earring.png": 2,
       "None.png": 79
     },
@@ -66,45 +99,50 @@
       "Type2.png": 33.333333333333336,
       "Type3.png": 33.333333333333336
     },
-    "Glasses": {
+    "Laser": {
+      "Blue Laser.png": 1,
+      "Red Laser.png": 1,
+      "Yellow Laser.png": 1,
+      "None.png": 97
+    },
+    "Eyes": {
       "Futuristic Glasses.png": 5,
-      "Grey Glasses.png": 7,
-      "Kratos Mark.png": 5,
+      "Sunglasses.png": 7,
+      "Scar.png": 5,
       "Mystic Eyes.png": 5,
       "None.png": 54,
       "Reading Glasses.png": 7,
-      "SOL Eyes.png": 2,
+      "Solana Eyes.png": 2,
       "Solana Glasses.png": 3,
       "Swimming Goggles.png": 7,
       "Tracker Glasses.png": 5
     },
     "Hair": {
-      "Green9.png": 7,
-      "Dark9.png": 7,
-      "Blond9.png": 7,
-      "Type11.png": 7,
-      "Type6.png": 7,
-      "Dark Black Hair.png": 7,
-      "Long Blond Hair.png": 7,
-      "Long Blue Hair.png": 7,
-      "Long Red Hair.png": 7,
-      "Ragnar Style Hair.png": 7,
-      "Solana Brown Hair.png": 1,
-      "Solana White Hair.png": 1,
-      "Spiked Blond Hair.png": 7,
-      "Style Hair.png": 7,
-      "new1.png": 7,
-      "Long White Hair.png": 7
+      "Blond Neat Hair.png": 6.85714285714,
+      "Curly Hair.png": 6.85714285714,
+      "Dark Neat Hair.png": 6.85714285714,
+      "Green Neat Hair.png": 6.85714285714,
+      "Long Blond Hair.png": 6.85714285714,
+      "Long Blue Hair.png": 6.85714285714,
+      "Long Dark Hair.png": 6.85714285714,
+      "Long Straight Hair.png": 6.85714285714,
+      "Long White Hair.png": 6.85714285714,
+      "Medium Blond Hair.png": 6.85714285714,
+      "Mohawk.png": 6.85714285714,
+      "Red Neat Hair.png": 6.85714285714,
+      "Short Hair.png": 6.85714285714,
+      "Spiked Blond Hair.png": 6.85714285714,
+      "Solana Brown Hair.png": 2,
+      "Solana White Hair.png": 2
     },
-
-    "Hat": {
-      "RedCap.png": 10,
-      "BlueCap.png": 10,
-      "Peaky Blinders Cap.png": 6,
+    "Head": {
+      "Red Hat.png": 10,
+      "Blue Hat.png": 10,
+      "Detective Beret.png": 6,
       "Golden Crown.png": 4,
       "Golden Tiara.png": 4,
-      "Halo.png": 4,
-      "TiaraWithDiamond.png": 3,
+      "Golden Halo.png": 4,
+      "Diamond Tiara.png": 3,
       "Solana Cap.png": 3,
       "Mystic Horns.png": 2,
       "Solana Bandana.png": 2,
@@ -113,7 +151,7 @@
       "None.png": 49
     },
     "Back": {
-      "None.png": 81.5,
+      "None.png": 80.5,
       "Double Axe.png": 2,
       "Double Curved Knife.png": 2,
       "Double Mace.png": 2,
@@ -123,9 +161,10 @@
       "Voodoo Wand.png": 2,
       "Fire Wand.png": 1,
       "Glacial Wand.png": 1,
-      "BlackWings.png": 1,
-      "WhiteWings.png": 1,
-      "DarkWings.png": 0.5
+      "Black Wings.png": 1,
+      "White Wings.png": 1,
+      "Demonic Wings.png": 0.5,
+      "Quiver.png": 1
     }
   },
   "order": [
@@ -133,11 +172,12 @@
     "Back",
     "Base",
     "Ears",
-    "Glasses",
+    "Eyes",
     "Hair",
     "Earrings",
-    "Hat",
     "Mouth",
+    "Laser",
+    "Head",
     "Clothes"
   ],
   "width": 640,

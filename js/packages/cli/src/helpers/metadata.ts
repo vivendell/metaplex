@@ -39,6 +39,7 @@ export async function createMetadataFiles(
     collection,
     dnp,
     premadeCustoms,
+    external_url,
   } = await readJsonFile(configLocation);
 
   while (numberOfFilesCreated < premadeCustoms.length) {
@@ -68,6 +69,7 @@ export async function createMetadataFiles(
       shuffled[i],
       collection,
       treatAttributesAsFileNames,
+      external_url,
     );
 
     try {

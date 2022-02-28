@@ -9,7 +9,7 @@ import { getAtaForMint } from './accounts';
 import { CLUSTERS, DEFAULT_CLUSTER } from './constants';
 import { Uses, UseMethod } from '@metaplex-foundation/mpl-token-metadata';
 import { generateElvenName } from './nameGen';
-import { generatePlot } from './plot';
+// import { generatePlot } from './plot';
 
 const { readFile } = fs.promises;
 
@@ -435,10 +435,12 @@ export const getMetadata = (
   symbol: string = '',
   index: number = 0,
   creators,
+  description,
   seller_fee_basis_points: number = 500,
   attrs,
   collection,
   treatAttributesAsFileNames: boolean,
+  external_url,
 ) => {
   const attributes = [];
   for (const prop in attrs) {
@@ -465,7 +467,11 @@ export const getMetadata = (
     elvenName = generateElvenName(2);
   }
 
-  const { paragraph1, paragraph2, paragraph3 } = generatePlot(isMale ? 2 : 1);
+  const filteredAttributes = attributes.filter(
+    attribute => attribute.trait_type !== 'Ears',
+  );
+
+  // const { paragraph1, paragraph2, paragraph3 } = generatePlot(isMale ? 2 : 1);
   return {
     name: `${elvenName}`,
     symbol,
@@ -480,15 +486,16 @@ export const getMetadata = (
       category: 'image',
       creators,
     },
-    description: `
-    ${paragraph1}
+    external_url,
+    // description: `
+    // ${paragraph1}
 
-    ${paragraph2}
+    // ${paragraph2}
 
-    ${paragraph3}
-    `,
+    // ${paragraph3}
+    // `,
     seller_fee_basis_points,
-    attributes,
+    attributes: filteredAttributes,
     collection,
   };
 };

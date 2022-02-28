@@ -107,7 +107,7 @@ echo "Renaming assets..."
 for i in *.png; do
     FILENAME=${i/.png/""}
     INDEX=${FILENAME}
-    jq '.image = "'$INDEX'.png" | .name = "Elf '$INDEX'" | .properties.files[0].uri = "'$INDEX'.png"' $INDEX.json >tmp.$$.json && mv tmp.$$.json $INDEX.json
+    jq '.image = "'$INDEX'.png" | .properties.files[0].uri = "'$INDEX'.png"' $INDEX.json >tmp.$$.json && mv tmp.$$.json $INDEX.json
 done
 
 cd ..

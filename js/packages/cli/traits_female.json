@@ -1,10 +1,11 @@
 {
-  "name": "Elf ",
-  "symbol": "ELF",
-  "description": "Elves of Vivendell",
+  "name": "Female",
+  "symbol": "ELVE",
+  "description": "Elf of Vivendell",
+  "external_url": "https://www.vivendell.com",
   "creators": [
     {
-      "address": "2VFC2JSWqgvdrUft1VN2unRSA5PcRfb5QDWbNQazGJKg",
+      "address": "ViVDtpVYKdhRRH9FTKsh6reJB9xXUqpX1233BSDZWRQ",
       "share": 100
     }
   ],
@@ -16,16 +17,7 @@
       "Sunglasses.png": {
         "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
       },
-      "Scar.png": {
-        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
-      },
-      "Mystic Eyes.png": {
-        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
-      },
       "Reading Glasses.png": {
-        "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
-      },
-      "Solana Eyes.png": {
         "Laser": ["Red Laser.png", "Yellow Laser.png", "Blue Laser.png"]
       },
       "Solana Glasses.png": {

@@ -8,6 +8,8 @@ import { StorageType } from './storage-type';
 import { getAtaForMint } from './accounts';
 import { CLUSTERS, DEFAULT_CLUSTER } from './constants';
 import { Uses, UseMethod } from '@metaplex-foundation/mpl-token-metadata';
+import { generateElvenName } from './nameGen';
+import { generatePlot } from './plot';
 
 const { readFile } = fs.promises;
 
@@ -416,7 +418,7 @@ export function generateRandoms(
   const loose_percentage = total / numberOfAttrs;
 
   for (let i = 0; i < numberOfAttrs; i++) {
-    const random = Math.floor(Math.random() * loose_percentage) + 1;
+    // const random = Math.floor(Math.random() * loose_percentage) + 1;
     numbers.push(loose_percentage);
   }
 
@@ -433,7 +435,6 @@ export const getMetadata = (
   symbol: string = '',
   index: number = 0,
   creators,
-  description: string = '',
   seller_fee_basis_points: number = 500,
   attrs,
   collection,
@@ -449,8 +450,24 @@ export const getMetadata = (
     });
   }
 
+  const isMale = name.indexOf('Male') !== -1;
+  const isNeutral = Math.random() * 10 > 5;
+
+  let elvenName;
+  if (isNeutral) {
+    /** Generate Neutral */
+    elvenName = generateElvenName(1);
+  } else if (isMale) {
+    /** Generate Male */
+    elvenName = generateElvenName(3);
+  } else {
+    /** Generate Female */
+    elvenName = generateElvenName(2);
+  }
+
+  const { paragraph1, paragraph2, paragraph3 } = generatePlot(isMale ? 2 : 1);
   return {
-    name: `${name}${index + 1}`,
+    name: `${elvenName}`,
     symbol,
     image: `${index}.png`,
     properties: {
@@ -463,7 +480,13 @@ export const getMetadata = (
       category: 'image',
       creators,
     },
-    description,
+    description: `
+    ${paragraph1}
+
+    ${paragraph2}
+
+    ${paragraph3}
+    `,
     seller_fee_basis_points,
     attributes,
     collection,

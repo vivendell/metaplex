@@ -10,8 +10,6 @@ function init() {
     .map(name => {
       const fileContent = require(dir + '/' + name);
 
-      fileContent['id'] = Number(fileContent.name.replace(/\D/g, ''));
-
       return fileContent;
     });
 
